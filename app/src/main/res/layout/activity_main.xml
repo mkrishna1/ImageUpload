@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imageID"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/imageNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageID"
+        android:hint="Enter image name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/chooseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"
+        android:layout_below="@+id/imageNameET"
+        android:onClick="selectImage"/>
+    
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:layout_below="@id/chooseBtn"
+        android:onClick="uploadImage"/>
+
+    <Button
+        android:id="@+id/moveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Move to second act"
+        android:layout_below="@id/uploadBtn"
+        android:onClick="moveToShowImageAct"/>
+
+</RelativeLayout>
